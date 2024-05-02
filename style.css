@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    /* background-color:pink; */
+    background-image: url(pexels-minan1398-920534.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 580px;
+    border: 2px solid rgb(2, 196, 255);
+   
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box h2{
+    color: #00c3ff;
+    text-align: center;
+    font-size: 32px;
+}
+
+.form-box .input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #01b3ff;
+}
+
+.form-box .input-box input{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0px 20px 0px 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+.input-box i{
+    position: relative;
+    color: #fff;
+    top: 33px;
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.btn{
+    color: #fff;
+    background-color: rgb(29, 153, 255);
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px ;
+    cursor: pointer;
+    /* box-shadow: 3px 0 10px rgb(99, 99, 226); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.group span a{
+    color: #2142ff;
+    position: relative;
+    top:10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#result{
+    position: relative;
+    top: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform .4s , top , .4s;
+    visibility: hidden;
+    text-align: center;
+    padding: 0 30px 30px;
+    height: 330px;
+}
+
+.popup ion-icon{
+    color: #2142ff;
+    font-size: 50px;
+}
+.popup button{
+    width: 100%;
+    background-color: #2142ff;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 50px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px rgba(152, 246, 115, 0.55);
+}
+
+.popup a{
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+.open-side{
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+}
